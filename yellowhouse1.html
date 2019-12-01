@@ -1,0 +1,454 @@
+<html>
+    <head>
+        <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+    </head>
+<body>
+    <script>
+    var quotes = [
+      '"Human intuition is usually right."',
+      '"I always win."',
+        '"I polish my trophies every day."',
+     '"Losing? I don\'t know that word."',
+       '"I have won many awards."',
+        '"2nd place is one below 1st."',
+      '"What a great day it is!"',
+      '"My boss gave me a promotion!"',
+      '"Can I get you a refreshment?"',
+      '"I think so."',
+      '"I don\'t think so."',
+      '"Have you seen this funny video?"',
+      '"Good to see you again!"',
+      '"Have we met?"',
+      '"Looking good today!"',
+      '"Did you change your hair?"',
+      '"How\'s that new job coming?"',
+      '"How are you today?"',
+      '"I\'ll remember that."',
+      '"I\'m going to the movies later."',
+      '"Did you order this beautiful weather?"',
+      '"Looks like a storm today."',
+      '"Who are you?"',
+      '"I\'m sorry, I don\'t want to talk right now."',
+      '"It\'s a shame about what happened to Guy."',
+      '"I get the feeling Guy is in a better place now."',
+      '"You know, we don\'t know that Guy is even missing."',
+      '"Did you hear the news?"',
+      '"Guy was a good friend."',
+      '"I used to have..."',
+      '"Hey, the sun is shining, can you believe it."', 
+      '"I have a name and a surname."',
+      '"Look at me."',
+      '"Something\'s behind you."',
+      '"Thank you."',
+      '"I was born a baby."',
+      '"I prefer coke over coca-cola."',
+      '"Do you have a spare time I can use?"',
+      '"Did you know fingers were created before fork?"',
+      '"If you stand in the middle of the road, <br> that would be very dangerous."',
+      '"It is called a handshake because you <br> actually shake hands."',
+      '"You\'re welcome."',
+       '"Home sweet home."',
+      '"I just decorated."',
+      '"Hello!"',
+      '"Great shoes!"',
+      '"Don\'t turn around."',
+      '"Can I get you a beverage?"',
+
+      
+  ]
+  
+  function newQuote() {
+      var randomNumber = Math.floor(Math.random() * (quotes.length));
+      document.getElementById('help').innerHTML = quotes[randomNumber];
+      document.getElementById("help").style.color = "black";
+      document.getElementById("help").style.fontSize = "18px";
+
+   
+  }
+    
+    
+    </script>
+    <style>
+        /*-------TABLET VIEWING------ */ 
+@media only screen and (max-width: 900px) {
+   /*TROPHIES */ 
+.box {
+  width:15%;
+  height:15%;
+  background-image: url(yellowhouse/yellowtrophytablet.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-1 {
+  top:18%;
+  left:41%;
+}
+.box:active > .pin-text {
+  display: block;
+}
+
+.pin-text {
+    font-family: monospace;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:75%;
+  white-space:nowrap;
+  display: none;
+}
+
+.pin-text h3 {
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+}  
+    /*DOORWAY */ 
+.box2 {
+  width:30%;
+  height:30%;
+  background-image:   url(yellowhouse/yellowdoortablet.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-2 {
+  top:67%;
+  left:55%;
+}
+       /*YELLOW MAN */ 
+.box3 {
+  width:35%;
+  height:35%;
+  background-image:   url(yellowhouse/yellowman.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-3 {
+  top:63%;
+  left:4%;
+}
+ .box3:active > .pin-text3 {
+  display: block;
+}
+
+.pin-text3 {
+    font-family: monospace;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:75%;
+  white-space:nowrap;
+  display: none;
+}
+
+.pin-text3 h3 {
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+} 
+            /*BUTTON */ 
+      
+.box5 {
+  width:10%;
+  height:10%;
+  background-image: url(yellowhouse/yellowbackbutton.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-5 {
+  top:5%;
+  left:5%;
+}
+        }
+         /*-------PHONE VIEWING------ */  
+@media only screen and (max-width: 480px) {
+       /*TROPHIES */ 
+.box {
+  width:15%;
+  height:15%;
+  background-image: url(yellowhouse/yellowtrophyphone.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-1 {
+  top:18%;
+  left:41%;
+}
+.box:active > .pin-text {
+  display: block;
+}
+
+.pin-text {
+    font-family: monospace;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:75%;
+  white-space:nowrap;
+  display: none;
+}
+
+.pin-text h3 {
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+}  
+    /*DOORWAY */ 
+.box2 {
+  width:22%;
+  height:22%;
+  background-image:   url(yellowhouse/yellowdoorphone.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-2 {
+  top:58%;
+  left:38%;
+}
+        /*YELLOW MAN */ 
+.box3 {
+  width:35%;
+  height:35%;
+  background-image:   url(yellowhouse/yellowman.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-3 {
+  top:63%;
+  left:8%;
+}
+ .box3:active > .pin-text3 {
+  display: block;
+}
+
+.pin-text3 {
+    font-family: monospace;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:75%;
+  white-space:nowrap;
+  display: none;
+}
+
+.pin-text3 h3 {
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+}
+            /*BUTTON */ 
+      
+.box5 {
+  width:10%;
+  height:10%;
+  background-image: url(yellowhouse/yellowbackbutton.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-5 {
+  top:5%;
+  left:5%;
+}
+        }
+         /*-------REGULAR VIEWING------ */ 
+@media only screen and (min-width: 901px) {
+.map {
+  margin:10px;
+  border:5px solid red;
+  position: relative;
+  display: inline-block;
+
+}
+
+.map img {
+  max-width:100%;
+  display: block;
+}
+/*TROPHIES */ 
+.box {
+  width:15%;
+  height:15%;
+  background-image:   url(yellowhouse/yellowtrophies.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-1 {
+  top:19%;
+  left:41%;
+}
+.box:active > .pin-text {
+  display: block;
+}
+
+.pin-text {
+    font-family: monospace;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:75%;
+  white-space:nowrap;
+  display: none;
+}
+
+.pin-text h3 {
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+}       
+    
+          
+/*DOORWAY */ 
+.box2 {
+  width:60%;
+  height:60%;
+  background-image:   url(yellowhouse/yellowdoorway.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-2 {
+  top:35%;
+  left:63%;
+}
+    /*YELLOW MAN */ 
+.box3 {
+  width:40%;
+  height:40%;
+  background-image:   url(yellowhouse/yellowman.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-3 {
+  top:63%;
+  left:0%;
+}
+ .box3:active > .pin-text3 {
+  display: block;
+}
+
+.pin-text3 {
+    font-family: monospace;
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:75%;
+  white-space:nowrap;
+  display: none;
+}
+
+.pin-text3 h3 {
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+}   
+        /*BUTTON */ 
+      
+.box5 {
+  width:10%;
+  height:10%;
+  background-image: url(yellowhouse/yellowbackbutton.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#pin-5 {
+  top:5%;
+  left:5%;
+}
+        
+        }
+       
+</style>
+            <!-- AUDIO-->
+<script type="text/javascript" src="howler.min.js"></script>
+<script type="text/javascript">
+var sound = new Howl({
+	loop: true,
+    src: ['audio/happybirthday.ogg', 'audio/happybirthday.mp3']
+     }).play();
+</script>
+
+<!-- BACKGROUND-->
+    
+<img src=yellowhouse/yellowhouse1.png width=100% height=100%>
+    <!-- TROPHIES-->
+
+  <div id="pin-1" class="box">
+      <div class="pin-text">
+      <h3>A proud display of trophies.</h3>
+    </div>
+      
+    </div>
+    
+ <!-- DOORWAY-->
+    
+   <a href="yellowbedroom.html">
+  <div id="pin-2" class="box2">
+      
+    </div>
+        </a>
+
+    <!-- YELLOW MAN-->
+
+    
+    
+  <div id="pin-3" class="box3"onclick="newQuote()">
+      <div  id = "help" class="pin-text3" onclick="newQuote()">
+     
+    </div>
+      
+    </div>
+     <!-- BACK-->
+    
+   <a href="page1.html">
+  <div id="pin-5" class="box5">
+      
+    </div>
+        </a>
+   
+
+    </body>
+</html>
